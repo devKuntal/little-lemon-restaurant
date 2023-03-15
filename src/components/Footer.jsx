@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <>
       <div className='bg-primary'>
-        <footer className='footer p-10 text-base-100 container mx-auto justify-center md:justify-between '>
+        <footer className='footer p-20 text-base-100 container mx-auto'>
           <div>
             <img src={logo} alt='logo' className='' />
             <p>
@@ -21,20 +21,10 @@ export default function Footer() {
           </div>
           <div>
             <span className='footer-title'>Useful Links</span>
-            <ul>
-              <li className='link link-hover'>
-                <Link to='/'>Home</Link>
-              </li>
-              <li className='link link-hover'>
-                <Link to='/'>Login</Link>
-              </li>
-              <li className='link link-hover'>
-                <Link to='/reservations'>Reservations</Link>
-              </li>
-              <li className='link link-hover'>
-                <Link to='/'>Order-online</Link>
-              </li>
-            </ul>
+                <Link to='/' className='link link-hover'>Home</Link>
+                <Link to='/' className='link link-hover'>Login</Link>
+                <Link to='/reservations' className='link link-hover'>Reservations</Link>
+                <Link to='/' className='link link-hover'>Order-online</Link>
           </div>
           <div>
             <span className='footer-title'>Company</span>

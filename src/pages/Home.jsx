@@ -19,8 +19,8 @@ export default function Home() {
     <>
       <Nav />
       <Hero />
-      <section className='mt-20'>
-        <div className='container md:flex justify-center md:justify-between mx-auto pb-10 px-10'>
+      <section className='mt-20 container mx-auto'>
+        <div className='md:flex justify-between pb-10 px-10 md:mx-32'>
           <div>
             <h1 className='text-4xl font-bold text-neutral font-display text-center md:text-left'>
               This weeks specials!
@@ -35,7 +35,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-10 mx-auto container mb-20 justify-items-stretch'>
+
+      <section className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-auto mx-auto container mb-20 justify-items-stretch'>
         <SpecialCard className='justify-self-center' />
         <SpecialCard />
         <SpecialCard />
